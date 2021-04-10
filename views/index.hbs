@@ -52,7 +52,7 @@
     <!-- End of section wrapper -->
   </div>
   <!-- End of home section -->
-  <!-- Begin of description section -->
+  <!-- Begin of about us section -->
   <div
     class="section section-description fp-auto-height-responsive"
     data-section="about"
@@ -119,8 +119,8 @@
     </div>
     <!-- End of section wrapper -->
   </div>
-  <!-- End of description section -->
-  <!-- Begin of description with team slider section -->
+  <!-- End of about us section -->
+  <!-- Begin of team section -->
   <div
     class="section section-description fp-auto-height-responsive"
     data-section="team"
@@ -223,78 +223,11 @@
     </div>
     <!-- End of section wrapper -->
   </div>
-  <!-- End of description with team slider section -->
-  <!-- Begin of description section -->
+  <!-- End of team section -->
+  <!-- Begin of mission section -->
   <div
     class="section section-description fp-auto-height-responsive"
-    data-section="about-feature-1"
-  >
-    <div class="section-cover-full">
-      <div class="cover-container">
-        <div class="row gx-0">
-          <div class="col-auto col-lg-8 bg-part"></div>
-          <div
-            class="col-12 col-lg-4 bg-part bg-img"
-            data-image-src="img/items/img-portrait-2.jpg"
-          ></div>
-        </div>
-      </div>
-    </div>
-    <!-- Begin of section wrapper -->
-    <div class="section-wrapper fullwidth fullheight with-margin center-lg-v">
-      <!-- content -->
-      <div class="section-content anim">
-        <div class="row  justify-content-between">
-          <div
-            class="col-12 col-md-6 col-lg-4 text-left center-v pr-md-5 pr-lg-0"
-          >
-            <div class="wrapper">
-              <!-- title and description -->
-              <div class="title-desc">
-                <h2 class="display-4 display-title mb-4 anim-1">
-                  Increase
-                  <br />
-                  <span class="text-lighter">
-                    Productivity
-                  </span>
-                </h2>
-                <p class="anim-2">
-                  This describes what we do and what is our mission.
-                  Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit. Maecenas a sem ultrices neque
-                  vehicula fermentum a sit amet nulla.
-                </p>
-              </div>
-              <!-- Action button -->
-              <div class="btns-action anim-3">
-                <a class="btn btn-underline btn-primary" href="#services">
-                  <span class="text">
-                    Services
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-5"></div>
-        </div>
-      </div>
-      <!-- Arrows scroll down/up -->
-      <footer class="section-footer scrolldown">
-        <a class="down">
-          <span class="icon down"></span>
-        </a>
-        <span class="separator"></span>
-        <a class="up">
-          <span class="icon up"></span>
-        </a>
-      </footer>
-    </div>
-    <!-- End of section wrapper -->
-  </div>
-  <!-- End of description section -->
-  <!-- Begin of description section -->
-  <div
-    class="section section-description fp-auto-height-responsive"
-    data-section="about-feature-2"
+    data-section="mission"
   >
     <div class="section-cover-full">
       <div class="cover-container">
@@ -357,8 +290,8 @@
     </div>
     <!-- End of section wrapper -->
   </div>
-  <!-- End of description section -->
-  <!-- Begin of list feature section -->
+  <!-- End of mission section -->
+  <!-- Begin of services section -->
   <div
     class="section section-list-feature fp-auto-height-responsive"
     data-section="services"
@@ -405,11 +338,6 @@
                         {{{this.serviceDescription}}}
                       </p>
                     </a>
-                    <a class="btn btn-underline btn-primary" href="#">
-                      <span class="text">
-                        Details ...
-                      </span>
-                    </a>
                   </div>
                 </div>
               {{/each}}
@@ -431,8 +359,83 @@
     </div>
     <!-- End of section wrapper -->
   </div>
-  <!-- End of list feature section -->
-  <!-- Begin of slider section -->
+  <!-- End of services section -->
+  <!-- Begin of products section -->
+  <div
+    class="section section-grid fp-auto-height-responsive"
+    data-section="projects"
+  >
+    <div
+      class="section-cover-full fit bg-color"
+      data-bgcolor="rgba(40,40,40,0.5)"
+    ></div>
+    <!-- Begin of section wrapper -->
+    <div class="section-wrapper fullwidth with-margin margin-topbottom">
+      <div class="section-content mb-3">
+        <div class="row">
+          <div class="col-12 col-lg-5 text-left">
+            <!-- title and description -->
+            <div class="title-desc">
+              <h2 class="display-4 display-title mb-4 anim-1">
+                Projects
+              </h2>
+              <p class="anim-2">
+                Here are various products from us. In marketing, a product is anything that
+                can be offered to a market that might satisfy a want or need.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Begin of item list -->
+      <div class="section-content mt-5">
+        <div class="row gx-lg-5 gy-lg-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <!-- item  -->
+          {{#each products}}
+            <div class="col">
+              <div class="item media media-product anim translateUp">
+                <div class="media-header">
+                  <h5 class="category">
+                    {{this.productName}}
+                  </h5>
+                </div>
+                <div class="media-img">
+                  <img
+                    class=""
+                    src="uploads/products/{{this.imageUrl}}"
+                    alt="{{this.productName}}"
+                  />
+                </div>
+                <div class="media-body">
+                  <a href="">
+                    <div class="desc">
+                      <p>
+                        {{{this.productDescription}}}
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+      <!-- End of item list -->
+      <!-- Arrows scroll down/up -->
+      <footer class="section-footer scrolldown">
+        <a class="down">
+          <span class="icon down"></span>
+        </a>
+        <span class="separator"></span>
+        <a class="up">
+          <span class="icon up"></span>
+        </a>
+      </footer>
+    </div>
+    <!-- End of section wrapper -->
+  </div>
+  <!-- End of products section -->
+  <!-- Begin of paper design section -->
   <div
     class="section section-twoside fullscreen-slider  py-0"
     data-section="projects-featured"
@@ -583,11 +586,11 @@
       </a>
     </footer>
   </div>
-  <!-- End of slider section -->
-  <!-- Begin of list projects section -->
+  <!-- End of paper design section -->
+  <!-- Begin of projects section -->
   <div
     class="section section-list-feature fp-auto-height-responsive"
-    data-section="projects"
+    data-section="odyssey-foundation"
   >
     <!-- Begin of section wrapper -->
     <div class="section-wrapper fullwidth with-margin margin-topbottom">
@@ -598,7 +601,7 @@
             <!-- title and description -->
             <div class="title-desc">
               <h2 class="display-4 display-title mb-4 anim-1">
-                Projects
+                Odyssey Foundation
               </h2>
               <p class="anim-2">
                 Here are some sample list of our projects. They are just a simple
@@ -634,13 +637,6 @@
                       </p>
                     </a>
                   </div>
-                  <div class="media-footer">
-                    <a class="btn btn-underline btn-primary" href="item.html">
-                      <span class="text">
-                        Details ...
-                      </span>
-                    </a>
-                  </div>
                 </div>
               </div>
             {{/each}}
@@ -660,68 +656,62 @@
     </div>
     <!-- End of section wrapper -->
   </div>
-  <!-- End of list projects section -->
-  <!-- Begin of list products section -->
+  <!-- End of projects section -->
+  <!-- Begin of technology section -->
   <div
-    class="section section-grid fp-auto-height-responsive"
-    data-section="products"
+    class="section section-list-feature fp-auto-height-responsive"
+    data-section="technology"
   >
-    <div
-      class="section-cover-full fit bg-color"
-      data-bgcolor="rgba(40,40,40,0.5)"
-    ></div>
     <!-- Begin of section wrapper -->
     <div class="section-wrapper fullwidth with-margin margin-topbottom">
-      <div class="section-content mb-3">
+      <!-- content -->
+      <div class="section-content anim">
         <div class="row">
           <div class="col-12 col-lg-5 text-left">
             <!-- title and description -->
             <div class="title-desc">
               <h2 class="display-4 display-title mb-4 anim-1">
-                Products
+                Technologies
               </h2>
               <p class="anim-2">
-                Here are various products from us. In marketing, a product is anything that
-                can be offered to a market that might satisfy a want or need.
+                We offers the following services to our base customer. They are just a simple
+                representation of what we can do. If you have something else, or a special request, feel free to
+                contact us.
               </p>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Begin of item list -->
-      <div class="section-content mt-5">
-        <div class="row gx-lg-5 gy-lg-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
-          <!-- item  -->
-          {{#each products}}
-            <div class="col">
-              <div class="item media media-product anim translateUp">
-                <div class="media-header">
-                  <h5 class="category">
-                    {{this.productName}}
-                  </h5>
-                </div>
-                <div class="media-img">
-                  <img
-                    class=""
-                    src="uploads/products/{{this.imageUrl}}"
-                    alt="{{this.productName}}"
-                  />
-                </div>
-                <div class="media-body">
-                  <a href="">
-                    <div class="desc">
+        <div class="row">
+          <div class="col col-12 col-lg-12">
+            <!-- service list -->
+            <div
+              class="service-list row anim-list decor-off row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5"
+            >
+              <!-- an item -->
+              {{#each technologies}}
+                <div class="col item media">
+                  <div class="img">
+                    <h3 class="title-icon opacity-4">
+                      {{add @index 1}}
+                    </h3>
+                  </div>
+                  <div class="media-body">
+                    <a href="#">
+                      <h4>
+                        {{this.technologyName}}
+                      </h4>
                       <p>
-                        {{{this.productDescription}}}
+                        {{{this.technologyDescription}}}
                       </p>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
                 </div>
-              </div>
+              {{/each}}
             </div>
-          {{/each}}
+            <!-- end of service list -->
+          </div>
         </div>
       </div>
-      <!-- End of item list -->
       <!-- Arrows scroll down/up -->
       <footer class="section-footer scrolldown">
         <a class="down">
@@ -735,11 +725,11 @@
     </div>
     <!-- End of section wrapper -->
   </div>
-  <!-- End of list products section -->
-  <!-- Begin of register/login/signin section -->
+  <!-- End of technology section -->
+  <!-- Begin of career section -->
   <div
     class="section section-register fp-auto-height-responsive"
-    data-section="register"
+    data-section="careers"
   >
     <!-- Begin of section wrapper -->
     <div
@@ -846,7 +836,7 @@
       </a>
     </footer>
   </div>
-  <!-- End of register/login/signin section -->
+  <!-- End of career section -->
   <!-- Begin of contact section -->
   <div
     class="section section-contact fp-auto-height-responsive no-slide-arrows"
