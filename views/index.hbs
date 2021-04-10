@@ -1,0 +1,1050 @@
+<!-- BEGIN OF page main content -->
+<main class="page-main page-fullpage main-anim" id="mainpage">
+  <!-- Begin of home section -->
+  <div
+    class="section section-home fullscreen-md fp-auto-height-responsive main-home section-centered"
+    data-section="home"
+  >
+    <!-- Begin of section wrapper -->
+    <div class="section-wrapper fullwidth with-margin v-center">
+      <!-- content -->
+      <div class="section-content anim">
+        <div class="row">
+          <div class="col-12 col-lg-6 text-left">
+            <!-- title and description -->
+            <div class="title-desc">
+              <h1 class="display-4 display-title home-title anim-1">
+                Hello,
+                <br />
+                <span class="text-lighter">
+                  We
+                  are
+                </span>
+                cool!
+              </h1>
+              <p class="anim-2 home-desc">
+                This is a website template, helping you to build modern and beautiful
+                websites
+              </p>
+            </div>
+            <!-- Action button -->
+            <div class="btns-action anim-3">
+              <a class="btn btn-underline btn-primary" href="#about">
+                <span class="text">
+                  About Us
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Arrows scroll down/up -->
+      <footer class="section-footer scrolldown">
+        <a class="down">
+          <span class="icon down"></span>
+        </a>
+        <!--<span class="separator"></span>-->
+        <!--<a class="up">
+      <span class="icon up"></span>
+    </a>-->
+      </footer>
+    </div>
+    <!-- End of section wrapper -->
+  </div>
+  <!-- End of home section -->
+  <!-- Begin of description section -->
+  <div
+    class="section section-description fp-auto-height-responsive"
+    data-section="about"
+  >
+    <!-- Begin of section wrapper -->
+    <div class="section-wrapper fullwidth fullheight with-margin center-lg-v">
+      <!-- content -->
+      <div class="section-content anim">
+        <div class="row  justify-content-between">
+          <div class="col-12 col-md-5 text-left center-v">
+            <div class="wrapper">
+              <!-- title and description -->
+              <div class="title-desc">
+                <h2 class="display-4 display-title mb-4 anim-1">
+                  About
+                  <br />
+                  <span class="text-lighter">
+                    The agency
+                  </span>
+                </h2>
+                <p class="anim-2">
+                  Helping our customer is our mission since the begining, and we will continue that.
+                  Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit. Maecenas a sem ultrices neque
+                  vehicula fermentum a sit amet nulla.
+                </p>
+              </div>
+              <!-- Action button -->
+              <div class="btns-action anim-3">
+                <a class="btn btn-underline btn-primary" href="#services">
+                  <span class="text">
+                    Services
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <!-- content -->
+            <div class="section-content center-vh anim">
+              <!-- illustartion -->
+              <div class="images text-center">
+                <div class="img-frame-a">
+                  <img
+                    class="img"
+                    src="img/items/img-square-1.jpg"
+                    alt="Image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Arrows scroll down/up -->
+      <footer class="section-footer scrolldown">
+        <a class="down">
+          <span class="icon down"></span>
+        </a>
+        <span class="separator"></span>
+        <a class="up">
+          <span class="icon up"></span>
+        </a>
+      </footer>
+    </div>
+    <!-- End of section wrapper -->
+  </div>
+  <!-- End of description section -->
+  <!-- Begin of description with team slider section -->
+  <div
+    class="section section-description fp-auto-height-responsive"
+    data-section="team"
+  >
+    <!-- Begin of section wrapper -->
+    <div
+      class="section-wrapper fullwidth fullheight center-lg-v with-margin margin-topbottom"
+    >
+      <!-- content -->
+      <div class="section-content fullwidth anim">
+        <div class="row">
+          <div class="col-12 col-md-5 text-left center-v">
+            <div class="wrapper">
+              <!-- title and description -->
+              <div class="title-desc">
+                <h1 class="display-4 display-title anim-1  mb-4">
+                  Creative
+                  <br />
+                  <span class="text-lighter">
+                    People
+                    behind
+                  </span>
+                </h1>
+                <p class="anim-2">
+                  This describes what we do and what is our mission. At right you can see the awesome
+                  person behind.
+                  Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit. Maecenas a sem ultrices neque
+                  vehicula fermentum a sit amet nulla.
+                </p>
+              </div>
+              <!-- Action button -->
+              <div class="btns-action anim-3">
+                <a class="btn btn-underline btn-primary" href="#services">
+                  <span class="text">
+                    Services
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- aside -->
+      <div class="section-aside aside-tier aside-bottom anim small-relative">
+        <div class="a-wrapper anim-4">
+          <!-- begin of slider carousel-swiper-alpha -->
+          <div
+            class="slider-wrapper carousel-swiper-alpha carousel-swiper-alpha-demo"
+          >
+            <!-- pagination -->
+            <div class="items-pagination bar text-right"></div>
+            <!-- slider -->
+            <div class="slider-container swiper-container">
+              <ul class="item-list swiper-wrapper">
+                <!-- item -->
+                {{#each members}}
+                  <li class="slide-item swiper-slide">
+                    <div class="item-wrapper">
+                      <div class="illustr">
+                        <a href="">
+                          <img
+                            src="uploads/teams/{{this.imageUrl}}"
+                            alt="{{this.memberName}}"
+                            class="img"
+                          />
+                        </a>
+                      </div>
+                      <div class="legend">
+                        <h3 class="title">
+                          {{this.memberName}}
+                        </h3>
+                        <h4>
+                          {{this.memberPosition}}
+                        </h4>
+                        <div class="icons">
+                          <a class="icon-btn" href="{{this.linkedinUrl}}">
+                            <i class="icon fa fa-linkedin"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                {{/each}}
+              </ul>
+            </div>
+          </div>
+          <!-- end of slider carousel-swiper-alpha -->
+        </div>
+      </div>
+      <!-- Arrows scroll down/up -->
+      <footer class="section-footer scrolldown">
+        <a class="down">
+          <span class="icon down"></span>
+        </a>
+        <span class="separator"></span>
+        <a class="up">
+          <span class="icon up"></span>
+        </a>
+      </footer>
+    </div>
+    <!-- End of section wrapper -->
+  </div>
+  <!-- End of description with team slider section -->
+  <!-- Begin of description section -->
+  <div
+    class="section section-description fp-auto-height-responsive"
+    data-section="about-feature-1"
+  >
+    <div class="section-cover-full">
+      <div class="cover-container">
+        <div class="row gx-0">
+          <div class="col-auto col-lg-8 bg-part"></div>
+          <div
+            class="col-12 col-lg-4 bg-part bg-img"
+            data-image-src="img/items/img-portrait-2.jpg"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <!-- Begin of section wrapper -->
+    <div class="section-wrapper fullwidth fullheight with-margin center-lg-v">
+      <!-- content -->
+      <div class="section-content anim">
+        <div class="row  justify-content-between">
+          <div
+            class="col-12 col-md-6 col-lg-4 text-left center-v pr-md-5 pr-lg-0"
+          >
+            <div class="wrapper">
+              <!-- title and description -->
+              <div class="title-desc">
+                <h2 class="display-4 display-title mb-4 anim-1">
+                  Increase
+                  <br />
+                  <span class="text-lighter">
+                    Productivity
+                  </span>
+                </h2>
+                <p class="anim-2">
+                  This describes what we do and what is our mission.
+                  Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit. Maecenas a sem ultrices neque
+                  vehicula fermentum a sit amet nulla.
+                </p>
+              </div>
+              <!-- Action button -->
+              <div class="btns-action anim-3">
+                <a class="btn btn-underline btn-primary" href="#services">
+                  <span class="text">
+                    Services
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5"></div>
+        </div>
+      </div>
+      <!-- Arrows scroll down/up -->
+      <footer class="section-footer scrolldown">
+        <a class="down">
+          <span class="icon down"></span>
+        </a>
+        <span class="separator"></span>
+        <a class="up">
+          <span class="icon up"></span>
+        </a>
+      </footer>
+    </div>
+    <!-- End of section wrapper -->
+  </div>
+  <!-- End of description section -->
+  <!-- Begin of description section -->
+  <div
+    class="section section-description fp-auto-height-responsive"
+    data-section="about-feature-2"
+  >
+    <div class="section-cover-full">
+      <div class="cover-container">
+        <div class="row gx-0">
+          <div class="col-auto col-lg-8 bg-part"></div>
+          <div
+            class="col-12 col-lg-4 bg-part bg-img"
+            data-image-src="img/items/img-portrait-4.jpg"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <!-- Begin of section wrapper -->
+    <div class="section-wrapper fullwidth fullheight with-margin center-lg-v">
+      <!-- content -->
+      <div class="section-content anim">
+        <div class="row  justify-content-between">
+          <div
+            class="col-12 col-md-6 col-lg-4 text-left center-v pr-md-5 pr-lg-0"
+          >
+            <div class="wrapper">
+              <!-- title and description -->
+              <div class="title-desc">
+                <h2 class="display-4 display-title mb-4 anim-1">
+                  Dedicated
+                  <br />
+                  <span class="text-lighter">
+                    Mission
+                  </span>
+                </h2>
+                <p class="anim-2">
+                  This describes what we do and what is our mission.
+                  Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit. Maecenas a sem ultrices neque
+                  vehicula fermentum a sit amet nulla.
+                </p>
+              </div>
+              <!-- Action button -->
+              <div class="btns-action anim-3">
+                <a class="btn btn-underline btn-primary" href="#services">
+                  <span class="text">
+                    Services
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5"></div>
+        </div>
+      </div>
+      <!-- Arrows scroll down/up -->
+      <footer class="section-footer scrolldown">
+        <a class="down">
+          <span class="icon down"></span>
+        </a>
+        <span class="separator"></span>
+        <a class="up">
+          <span class="icon up"></span>
+        </a>
+      </footer>
+    </div>
+    <!-- End of section wrapper -->
+  </div>
+  <!-- End of description section -->
+  <!-- Begin of list feature section -->
+  <div
+    class="section section-list-feature fp-auto-height-responsive"
+    data-section="services"
+  >
+    <!-- Begin of section wrapper -->
+    <div class="section-wrapper fullwidth with-margin margin-topbottom">
+      <!-- content -->
+      <div class="section-content anim">
+        <div class="row">
+          <div class="col-12 col-lg-5 text-left">
+            <!-- title and description -->
+            <div class="title-desc">
+              <h2 class="display-4 display-title mb-4 anim-1">
+                Services
+              </h2>
+              <p class="anim-2">
+                We offers the following services to our base customer. They are just a simple
+                representation of what we can do. If you have something else, or a special request, feel free to
+                contact us.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-12 col-lg-12">
+            <!-- service list -->
+            <div
+              class="service-list row anim-list decor-off row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5"
+            >
+              <!-- an item -->
+              {{#each services}}
+                <div class="col item media">
+                  <div class="img">
+                    <h3 class="title-icon opacity-4">
+                      {{add @index 1}}
+                    </h3>
+                  </div>
+                  <div class="media-body">
+                    <a href="#">
+                      <h4>
+                        {{this.serviceName}}
+                      </h4>
+                      <p>
+                        {{{this.serviceDescription}}}
+                      </p>
+                    </a>
+                    <a class="btn btn-underline btn-primary" href="#">
+                      <span class="text">
+                        Details ...
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              {{/each}}
+            </div>
+            <!-- end of service list -->
+          </div>
+        </div>
+      </div>
+      <!-- Arrows scroll down/up -->
+      <footer class="section-footer scrolldown">
+        <a class="down">
+          <span class="icon down"></span>
+        </a>
+        <span class="separator"></span>
+        <a class="up">
+          <span class="icon up"></span>
+        </a>
+      </footer>
+    </div>
+    <!-- End of section wrapper -->
+  </div>
+  <!-- End of list feature section -->
+  <!-- Begin of slider section -->
+  <div
+    class="section section-twoside fullscreen-slider  py-0"
+    data-section="projects-featured"
+  >
+    <div class="slide">
+      <div class="slide-wrapper">
+        <div class="item-wrapper">
+          <div class="illustr">
+            <div
+              class="img bg-img"
+              data-image-src="img/items/img-sample1.jpg"
+            ></div>
+            <div class="decor-frame"></div>
+          </div>
+          <div class="legend">
+            <a href="item.html#project_url">
+              <h3>
+                Paper Design
+              </h3>
+              <h4>
+                Art / Print
+              </h4>
+              <p>
+                Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
+                Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla.
+              </p>
+            </a>
+            <a
+              class="btn btn-underline btn-primary"
+              href="item.html#project_url"
+            >
+              <span class="text">
+                View Project
+              </span>
+            </a>
+            <!--
+        <div class="icons">
+          <a class="icon-btn" href="#">
+            <i class="icon fa fa-instagram"></i>
+          </a>
+          <a class="icon-btn" href="#">
+            <i class="icon fa fa-globe"></i>
+          </a>
+        </div>
+        -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide-wrapper">
+        <div class="item-wrapper">
+          <div class="illustr">
+            <div
+              class="img bg-img"
+              data-image-src="img/items/img-sample2.jpg"
+            ></div>
+            <div class="decor-frame"></div>
+          </div>
+          <div class="legend">
+            <a href="item.html#project_url">
+              <h3>
+                Fire Cloud
+              </h3>
+              <h4>
+                Photography / App
+              </h4>
+              <p>
+                Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
+                Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla.
+              </p>
+            </a>
+            <a
+              class="btn btn-underline btn-primary"
+              href="item.html#project_url"
+            >
+              <span class="text">
+                View Project
+              </span>
+            </a>
+            <!--
+        <div class="icons">
+          <a class="icon-btn" href="#">
+            <i class="icon ion-android-home"></i>
+          </a>
+          <a class="icon-btn" href="#">
+            <i class="icon ion-android-cart"></i>
+          </a>
+        </div>
+        -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide-wrapper">
+        <div class="item-wrapper">
+          <div class="illustr">
+            <div
+              class="img bg-img"
+              data-image-src="img/items/img-sample3.jpg"
+            ></div>
+            <div class="decor-frame"></div>
+          </div>
+          <div class="legend">
+            <a href="item.html#project_url">
+              <h3>
+                Color Wall
+              </h3>
+              <h4>
+                Photography
+              </h4>
+              <p>
+                Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
+                Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla.
+              </p>
+            </a>
+            <a
+              class="btn btn-underline btn-primary"
+              href="item.html#project_url"
+            >
+              <span class="text">
+                View Project
+              </span>
+            </a>
+            <!--
+        <div class="icons">
+          <a class="icon-btn" href="#">
+            <i class="icon ion-android-home"></i>
+          </a>
+          <a class="icon-btn" href="#">
+            <i class="icon fa fa-instagram"></i>
+          </a>
+        </div>
+        -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Arrows scroll down/up -->
+    <footer class="section-footer scrolldown">
+      <a class="down">
+        <span class="icon down"></span>
+      </a>
+      <span class="separator"></span>
+      <a class="up">
+        <span class="icon up"></span>
+      </a>
+    </footer>
+  </div>
+  <!-- End of slider section -->
+  <!-- Begin of list projects section -->
+  <div
+    class="section section-list-feature fp-auto-height-responsive"
+    data-section="projects"
+  >
+    <!-- Begin of section wrapper -->
+    <div class="section-wrapper fullwidth with-margin margin-topbottom">
+      <!-- content -->
+      <div class="section-content anim">
+        <div class="row">
+          <div class="col-12 col-lg-5 text-left">
+            <!-- title and description -->
+            <div class="title-desc">
+              <h2 class="display-4 display-title mb-4 anim-1">
+                Projects
+              </h2>
+              <p class="anim-2">
+                Here are some sample list of our projects. They are just a simple
+                representation of what we can do. If you have something else, or a special request, feel
+                free to contact us.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- project list -->
+        <div class="project-list mt-5">
+          <div
+            class="row gx-lg-5 gy-lg-5 row-cols-1 row-cols-md-2 row-cols-lg-3"
+          >
+            <!-- an item -->
+            {{#each projects}}
+              <div class="col">
+                <div class="item media media-project">
+                  <div class="media-img">
+                    <img
+                      class=""
+                      src="uploads/projects/{{this.imageUrl}}"
+                      alt="{{this.projectName}}"
+                    />
+                  </div>
+                  <div class="media-body">
+                    <a href="">
+                      <h4>
+                        {{this.projectName}}
+                      </h4>
+                      <p>
+                        {{{this.projectDescription}}}
+                      </p>
+                    </a>
+                  </div>
+                  <div class="media-footer">
+                    <a class="btn btn-underline btn-primary" href="item.html">
+                      <span class="text">
+                        Details ...
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+      <!-- Arrows scroll down/up -->
+      <footer class="section-footer scrolldown">
+        <a class="down">
+          <span class="icon down"></span>
+        </a>
+        <span class="separator"></span>
+        <a class="up">
+          <span class="icon up"></span>
+        </a>
+      </footer>
+    </div>
+    <!-- End of section wrapper -->
+  </div>
+  <!-- End of list projects section -->
+  <!-- Begin of list products section -->
+  <div
+    class="section section-grid fp-auto-height-responsive"
+    data-section="products"
+  >
+    <div
+      class="section-cover-full fit bg-color"
+      data-bgcolor="rgba(40,40,40,0.5)"
+    ></div>
+    <!-- Begin of section wrapper -->
+    <div class="section-wrapper fullwidth with-margin margin-topbottom">
+      <div class="section-content mb-3">
+        <div class="row">
+          <div class="col-12 col-lg-5 text-left">
+            <!-- title and description -->
+            <div class="title-desc">
+              <h2 class="display-4 display-title mb-4 anim-1">
+                Products
+              </h2>
+              <p class="anim-2">
+                Here are various products from us. In marketing, a product is anything that
+                can be offered to a market that might satisfy a want or need.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Begin of item list -->
+      <div class="section-content mt-5">
+        <div class="row gx-lg-5 gy-lg-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <!-- item  -->
+          {{#each products}}
+            <div class="col">
+              <div class="item media media-product anim translateUp">
+                <div class="media-header">
+                  <h5 class="category">
+                    {{this.productName}}
+                  </h5>
+                </div>
+                <div class="media-img">
+                  <img
+                    class=""
+                    src="uploads/products/{{this.imageUrl}}"
+                    alt="{{this.productName}}"
+                  />
+                </div>
+                <div class="media-body">
+                  <a href="">
+                    <div class="desc">
+                      <p>
+                        {{{this.productDescription}}}
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+      <!-- End of item list -->
+      <!-- Arrows scroll down/up -->
+      <footer class="section-footer scrolldown">
+        <a class="down">
+          <span class="icon down"></span>
+        </a>
+        <span class="separator"></span>
+        <a class="up">
+          <span class="icon up"></span>
+        </a>
+      </footer>
+    </div>
+    <!-- End of section wrapper -->
+  </div>
+  <!-- End of list products section -->
+  <!-- Begin of register/login/signin section -->
+  <div
+    class="section section-register fp-auto-height-responsive"
+    data-section="register"
+  >
+    <!-- Begin of section wrapper -->
+    <div
+      class="section-wrapper fullwidth fullheight center-lg-v with-margin margin-topbottom"
+    >
+      <!-- content -->
+      <div class="section-content fullwidth anim">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-5">
+            <!-- Registration form container-->
+            <form
+              class="send_email_form form-container form-container-transparent form-container-white"
+              method="post"
+              action="ajaxserver/serverfile.php"
+            >
+              <div class="form-desc">
+                <h2 class="display-4 display-title  anim-2">
+                  Subscribe
+                </h2>
+                <p class="invite  anim-3">
+                  Don't miss any new opportunity, Hurry up! register now :
+                </p>
+              </div>
+              <div class="form-input  anim-4">
+                <div class="form-group form-success-gone">
+                  <label for="reg-email">
+                    Email
+                  </label>
+                  <input
+                    id="reg-email"
+                    name="email"
+                    class="form-control-line form-control-white"
+                    type="email"
+                    required
+                    placeholder="your@email.address"
+                    data-validation-type="email"
+                  />
+                </div>
+                <div class="form-group mb-0">
+                  <div>
+                    <p
+                      class="email-ok invisible form-text-feedback form-success-visible"
+                    >
+                      Your email has been
+                      registred, thank you.
+                    </p>
+                  </div>
+                  <div class="btns-action anim-3">
+                    <button
+                      id="submit-email"
+                      name="submit_email"
+                      class="btn btn-underline btn-primary form-success-gone"
+                    >
+                      <span class="text">
+                        Subscribe
+                      </span>
+                      <span class="icon">
+                        <i class="ion ion-checkmark"></i>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- end of content -->
+      <!-- aside footer -->
+      <div class="section-aside aside-bottom small-relative footer-pos">
+        <div class="text-left text-md-right">
+          <p>
+            Stay updated. Follow us on social media
+          </p>
+        </div>
+        <div class="icons icons-margin">
+          <a class="icon-btn" href="#">
+            <i class="icon fa fa-instagram"></i>
+          </a>
+          <a class="icon-btn" href="#">
+            <i class="icon fa fa-youtube"></i>
+          </a>
+          <a class="icon-btn" href="#">
+            <i class="icon fa fa-facebook"></i>
+          </a>
+          <a class="icon-btn" href="#">
+            <i class="icon fa fa-pinterest"></i>
+          </a>
+          <a class="icon-btn" href="#">
+            <i class="icon fa fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End of section wrapper -->
+    <!-- Arrows scroll down/up -->
+    <footer class="section-footer scrolldown">
+      <a class="down">
+        <span class="icon down"></span>
+      </a>
+      <span class="separator"></span>
+      <a class="up">
+        <span class="icon up"></span>
+      </a>
+    </footer>
+  </div>
+  <!-- End of register/login/signin section -->
+  <!-- Begin of contact section -->
+  <div
+    class="section section-contact fp-auto-height-responsive no-slide-arrows"
+    data-section="contact"
+  >
+    <div
+      class="section-cover-full fit bg-color"
+      data-bgcolor="rgba(40,40,40,0.5)"
+    ></div>
+    <!-- begin of information slide -->
+    <div class="slide" id="information" data-anchor="information">
+      <!-- Begin of slide section wrapper -->
+      <div
+        class="section-wrapper fullwidth fullheight center-lg-v with-margin margin-topbottom"
+      >
+        <!-- main content -->
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-6">
+            <!-- content -->
+            <div class="section-content fullwidth anim text-left">
+              <!-- title and description -->
+              <div class="title-desc">
+                <div class="anim-2">
+                  <h2 class="display-4 display-title">
+                    Contact
+                  </h2>
+                  <p>
+                    For questions about our company and products found on our stores. Cras vitae neque molestie,
+                    rhoncus ipsum sit amet,
+                    lobortis dui. Fusce in urna sem.
+                  </p>
+                </div>
+                <div class="address-container anim-3">
+                  <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <h4>
+                        Contact
+                      </h4>
+                      <p>
+                        Call: 01 234 567 89
+                      </p>
+                      <p>
+                        Email: ouremail@domain.com
+                      </p>
+                      <div class="icons icons-margin">
+                        <a class="icon-btn" href="#">
+                          <i class="icon fa fa-instagram"></i>
+                        </a>
+                        <a class="icon-btn" href="#">
+                          <i class="icon fa fa-twitter"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <h4>
+                        Address
+                      </h4>
+                      <p>
+                        Company address
+                        <br />
+                        12 Street Turning Place
+                        <br />
+                        South Est, Antartica
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Action button -->
+              <div class="btns-action anim-4">
+                <a class="btn btn-underline" href="#contact/message">
+                  <span class="txt">
+                    Send Message
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6"></div>
+        </div>
+      </div>
+      <!-- End of slide section wrapper -->
+    </div>
+    <!-- begin of message slide -->
+    <div class="slide" id="message" data-anchor="message">
+      <!-- Begin of slide section wrapper -->
+      <div
+        class="section-wrapper fullwidth fullheight center-lg-v with-margin margin-topbottom"
+      >
+        <!-- main content -->
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-6">
+            <!-- content -->
+            <div class="section-content fullwidth anim text-left">
+              <!-- title and description -->
+              <div class="title-desc">
+                <div class="anim-2">
+                  <h2 class="display-4 display-title">
+                    Email Us
+                  </h2>
+                  <p>
+                    For questions about our company and products found on our stores. Cras vitae neque molestie,
+                    rhoncus ipsum sit amet,
+                    lobortis dui. Fusce in urna sem.
+                  </p>
+                </div>
+              </div>
+              <!-- Action button -->
+              <div class="btns-action anim-4">
+                <a class="btn btn-underline" href="#contact/information">
+                  <span class="txt">
+                    Information
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6"></div>
+        </div>
+        <!-- aside content -->
+        <div class="section-aside aside-bottom anim small-relative">
+          <div class="message-form">
+            <h4>
+              Write message
+            </h4>
+            <div class="form-container form-container-card">
+              <!-- Message form container -->
+              <form
+                class="send_message_form message form"
+                method="post"
+                action="ajaxserver/serverfile.php"
+                id="message_form"
+              >
+                <div class="form-group name">
+                  <input
+                    id="mes-name"
+                    name="name"
+                    type="text"
+                    placeholder="Name"
+                    class="form-control form-control-outline thick form-success-clean"
+                    required
+                  />
+                </div>
+                <div class="form-group email">
+                  <input
+                    id="mes-email"
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    class="form-control form-control-outline thick form-success-clean"
+                    required
+                  />
+                </div>
+                <div class="form-group no-border">
+                  <textarea
+                    id="mes-text"
+                    placeholder="Message ..."
+                    name="message"
+                    class="form-control form-control-outline thick form-success-clean"
+                    required
+                  ></textarea>
+                  <div>
+                    <p
+                      class="message-ok invisible form-text-feedback form-success-visible"
+                    >
+                      Your message has been
+                      sent, thank you.
+                    </p>
+                  </div>
+                </div>
+                <div class="btns text-right">
+                  <button
+                    id="submit-message"
+                    class="btn btn-underline btn-round btn-fullNot email_b"
+                    name="submit_message"
+                  >
+                    <span class="text">
+                      Send Now
+                    </span>
+                    <span class="icon">
+                      <i class="ion ion-android-mail"></i>
+                    </span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of slide section wrapper -->
+    </div>
+    <!-- Arrows scroll down/up -->
+    <footer class="section-footer scrolldown">
+      <a class="up ml-0">
+        <span class="icon up"></span>
+      </a>
+    </footer>
+  </div>
+  <!-- End of contact section -->
+</main>
+<!-- END OF page main content -->
