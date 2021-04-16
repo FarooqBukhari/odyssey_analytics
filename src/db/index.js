@@ -29,8 +29,12 @@ db.sequelize = sequelize;
 
 db.teams = require("../models/team.model")(sequelize, Sequelize);
 db.projects = require("../models/project.model")(sequelize, Sequelize);
-db.products = require("../models/product.model")(sequelize, Sequelize);
+db.odysseyFoundationProjects = require("../models/odysseyFoundationProject.model")(sequelize, Sequelize);
 db.technologies = require("../models/technology.model")(sequelize, Sequelize);
 db.services = require("../models/service.model")(sequelize, Sequelize);
+db.careerPortalLink = require("../models/careerPortalLink.model")(sequelize, Sequelize);
+db.contact = require("../models/contact.model")(sequelize, Sequelize);
+db.hideSection = require("../models/hideSection.model")(sequelize, Sequelize);
+db.sectionIntroduction = require("../models/sectionIntroduction.model")(sequelize, Sequelize);
 
 module.exports = db;

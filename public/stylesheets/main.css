@@ -3846,7 +3846,7 @@ textarea {
   width: 100%;
   height: 100%;
   /*  Page cover background image,color */
-  background: url(../images/backgrounds/odysseyBackground.jpg);
+  background: url(../img/bg-default2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

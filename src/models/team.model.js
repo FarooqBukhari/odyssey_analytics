@@ -8,6 +8,10 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    memberBio: {
+      type: DataTypes.TEXT,
+      allowNull: true,
+    },
     linkedinUrl: {
       type: DataTypes.STRING,
       allowNull: true,

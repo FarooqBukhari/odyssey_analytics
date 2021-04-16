@@ -1,747 +1,802 @@
 <!-- BEGIN OF page main content -->
 <main class="page-main page-fullpage main-anim" id="mainpage">
   <!-- Begin of home section -->
-  <div
-    class="section section-home fullscreen-md fp-auto-height-responsive main-home section-centered"
-    data-section="home"
-  >
-    <!-- Begin of section wrapper -->
-    <div class="section-wrapper fullwidth with-margin v-center">
-      <!-- content -->
-      <div class="section-content anim">
-        <div class="row">
-          <div class="col-12 col-lg-6 text-left">
-            <!-- title and description -->
-            <div class="title-desc">
-              <h1 class="display-4 display-title home-title anim-1">
-                Odyssey Analytics
-              </h1>
-              <p class="anim-2 home-desc">
-                A New Era in Technology Transformation
-              </p>
-            </div>
-            <!-- Action button -->
-            <div class="btns-action anim-3">
-              <a class="btn btn-underline btn-primary" href="#about">
-                <span class="text">
-                  About Us
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Arrows scroll down/up -->
-      <footer class="section-footer scrolldown">
-        <a class="down">
-          <span class="icon down"></span>
-        </a>
-        <!--<span class="separator"></span>-->
-        <!--<a class="up">
-      <span class="icon up"></span>
-    </a>-->
-      </footer>
-    </div>
-    <!-- End of section wrapper -->
-  </div>
-  <!-- End of home section -->
-  <!-- Begin of about us section -->
-  <div
-    class="section section-description fp-auto-height-responsive"
-    data-section="about"
-  >
-    <!-- Begin of section wrapper -->
-    <div class="section-wrapper fullwidth fullheight with-margin center-lg-v">
-      <!-- content -->
-      <div class="section-content anim">
-        <div class="row  justify-content-between">
-          <div class="col-12 col-md-5 text-left center-v">
-            <div class="wrapper">
-              <!-- title and description -->
-              <div class="title-desc">
-                <h2 class="display-4 display-title mb-4 anim-1">
-                  About
-                  <br />
-                  <span class="text-lighter">
-                    The agency
-                  </span>
-                </h2>
-                <p class="anim-2">
-                  Odyssey Analytics offers software development for digital technology, artificial intelligence and robotic processing automation. With offices in Houston and Lahore, Odyssey is a key partner for businesses and organizations who have technology projects of all sizes that require additional resources. Odyssey creates and manages teams of software developers and programmers who make your Digital technology and AI projects a reality. We work with clients to understand their specific needs and create and manage bespoke solutions to suit a variety of needs. Instead of offering one size fits all digital products with subscription fees, Odyssey takes your plans and helps to make them a reality. Headed by experts in the field of digital technology with twenty-five years of experience, Odyssey is focused on maintaining highly ethical, well managed offices overseas. Our mission includes the desire to support women in technology and to create offices that are environmentally conscious and managed with the highest ethical standards. Technology is our business, and people are our priority.
-                </p>
-              </div>
-              <!-- Action button -->
-              <div class="btns-action anim-3">
-                <a class="btn btn-underline btn-primary" href="#services">
-                  <span class="text">
-                    Services
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <!-- content -->
-            <div class="section-content center-vh anim">
-              <!-- illustartion -->
-              <div class="images text-center">
-                <div class="img-frame-a">
-                  <img
-                    class="img"
-                    src="img/items/img-square-1.jpg"
-                    alt="Image"
-                  />
+  {{#if hideSection}}
+    {{#unless hideSection.home}}
+      <div
+        class="section section-home fullscreen-md fp-auto-height-responsive main-home section-centered"
+        data-section="home"
+      >
+        <!-- Begin of section wrapper -->
+        <div class="section-wrapper fullwidth with-margin v-center">
+          <!-- content -->
+          <div class="section-content anim">
+            <div class="row">
+              <div class="col-12 col-lg-6 text-left">
+                <!-- title and description -->
+                <div class="title-desc">
+                  <h1 class="display-4 display-title home-title anim-1">
+                    Odyssey Analytics
+                  </h1>
+                  <p class="anim-2 home-desc">
+                    {{#if sectionIntroduction}}
+                        {{{sectionIntroduction.home}}}
+                      {{/if}}
+                  </p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Arrows scroll down/up -->
-      <footer class="section-footer scrolldown">
-        <a class="down">
-          <span class="icon down"></span>
-        </a>
-        <span class="separator"></span>
-        <a class="up">
-          <span class="icon up"></span>
-        </a>
-      </footer>
-    </div>
-    <!-- End of section wrapper -->
-  </div>
-  <!-- End of about us section -->
-  <!-- Begin of team section -->
-  <div
-    class="section section-description fp-auto-height-responsive"
-    data-section="team"
-  >
-    <!-- Begin of section wrapper -->
-    <div
-      class="section-wrapper fullwidth fullheight center-lg-v with-margin margin-topbottom"
-    >
-      <!-- content -->
-      <div class="section-content fullwidth anim">
-        <div class="row">
-          <div class="col-12 col-md-5 text-left center-v">
-            <div class="wrapper">
-              <!-- title and description -->
-              <div class="title-desc">
-                <h1 class="display-4 display-title anim-1  mb-4">
-                  Creative
-                  <br />
-                  <span class="text-lighter">
-                    People
-                    behind
-                  </span>
-                </h1>
-                <p class="anim-2">
-                  Meet our talented team
-                </p>
-              </div>
-              <!-- Action button -->
-              <div class="btns-action anim-3">
-                <a class="btn btn-underline btn-primary" href="#services">
-                  <span class="text">
-                    Services
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- aside -->
-      <div class="section-aside aside-tier aside-bottom anim small-relative">
-        <div class="a-wrapper anim-4">
-          <!-- begin of slider carousel-swiper-alpha -->
-          <div
-            class="slider-wrapper carousel-swiper-alpha carousel-swiper-alpha-demo"
-          >
-            <!-- pagination -->
-            <div class="items-pagination bar text-right"></div>
-            <!-- slider -->
-            <div class="slider-container swiper-container">
-              <ul class="item-list swiper-wrapper">
-                <!-- item -->
-                {{#each members}}
-                  <li class="slide-item swiper-slide">
-                    <div class="item-wrapper">
-                      <div class="illustr">
-                        <a href="">
-                          <img
-                            src="uploads/teams/{{this.imageUrl}}"
-                            alt="{{this.memberName}}"
-                            class="img"
-                          />
-                        </a>
-                      </div>
-                      <div class="legend">
-                        <h3 class="title">
-                          {{this.memberName}}
-                        </h3>
-                        <h4>
-                          {{this.memberPosition}}
-                        </h4>
-                        <div class="icons">
-                          <a class="icon-btn" href="{{this.linkedinUrl}}">
-                            <i class="icon fa fa-linkedin"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                {{/each}}
-              </ul>
-            </div>
-          </div>
-          <!-- end of slider carousel-swiper-alpha -->
-        </div>
-      </div>
-      <!-- Arrows scroll down/up -->
-      <footer class="section-footer scrolldown">
-        <a class="down">
-          <span class="icon down"></span>
-        </a>
-        <span class="separator"></span>
-        <a class="up">
-          <span class="icon up"></span>
-        </a>
-      </footer>
-    </div>
-    <!-- End of section wrapper -->
-  </div>
-  <!-- End of team section -->
-  <!-- Begin of mission section -->
-  <div
-    class="section section-description fp-auto-height-responsive"
-    data-section="mission"
-  >
-    <div class="section-cover-full">
-      <div class="cover-container">
-        <div class="row gx-0">
-          <div class="col-auto col-lg-8 bg-part"></div>
-          <div
-            class="col-12 col-lg-4 bg-part bg-img"
-            data-image-src="img/items/img-portrait-4.jpg"
-          ></div>
-        </div>
-      </div>
-    </div>
-    <!-- Begin of section wrapper -->
-    <div class="section-wrapper fullwidth fullheight with-margin center-lg-v">
-      <!-- content -->
-      <div class="section-content anim">
-        <div class="row  justify-content-between">
-          <div
-            class="col-12 col-md-6 col-lg-4 text-left center-v pr-md-5 pr-lg-0"
-          >
-            <div class="wrapper">
-              <!-- title and description -->
-              <div class="title-desc">
-                <h2 class="display-4 display-title mb-4 anim-1">
-                  Dedicated
-                  <br />
-                  <span class="text-lighter">
-                    Mission
-                  </span>
-                </h2>
-                <p class="anim-2">
-                  The mission of Odyssey analytics is to create software digital solutions for business and organizations worldwide. With a shortage of skilled technology workers in the United States, Odyssey seeks to connect the emerging technology needs of developed nations with the untapped resources in developing nations. We do so by creating offshore work environments that are governed by the highest ethical and environmental standards. We are also committed to supporting women in technology and to supporting the expansion of educational opportunities in technology and related fields, for individuals regardless of gender, class, race or religion.
-                </p>
-              </div>
-              <!-- Action button -->
-              <div class="btns-action anim-3">
-                <a class="btn btn-underline btn-primary" href="#services">
-                  <span class="text">
-                    Services
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-5"></div>
-        </div>
-      </div>
-      <!-- Arrows scroll down/up -->
-      <footer class="section-footer scrolldown">
-        <a class="down">
-          <span class="icon down"></span>
-        </a>
-        <span class="separator"></span>
-        <a class="up">
-          <span class="icon up"></span>
-        </a>
-      </footer>
-    </div>
-    <!-- End of section wrapper -->
-  </div>
-  <!-- End of mission section -->
-  <!-- Begin of services section -->
-  <div
-    class="section section-list-feature fp-auto-height-responsive"
-    data-section="services"
-  >
-    <!-- Begin of section wrapper -->
-    <div class="section-wrapper fullwidth with-margin margin-topbottom">
-      <!-- content -->
-      <div class="section-content anim">
-        <div class="row">
-          <div class="col-12 col-lg-5 text-left">
-            <!-- title and description -->
-            <div class="title-desc">
-              <h2 class="display-4 display-title mb-4 anim-1">
-                Services
-              </h2>
-              <p class="anim-2">
-                We offers the following services to our base customer. They are just a simple
-                representation of what we can do. If you have something else, or a special request, feel free to
-                contact us.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col col-12 col-lg-12">
-            <!-- service list -->
-            <div
-              class="service-list row anim-list decor-off row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5"
-            >
-              <!-- an item -->
-              {{#each services}}
-                <div class="col item media">
-                  <div class="img">
-                    <h3 class="title-icon opacity-4">
-                      {{add @index 1}}
-                    </h3>
-                  </div>
-                  <div class="media-body">
-                    <a href="#">
-                      <h4>
-                        {{this.serviceName}}
-                      </h4>
-                      <p>
-                        {{{this.serviceDescription}}}
-                      </p>
-                    </a>
-                  </div>
-                </div>
-              {{/each}}
-            </div>
-            <!-- end of service list -->
-          </div>
-        </div>
-      </div>
-      <!-- Arrows scroll down/up -->
-      <footer class="section-footer scrolldown">
-        <a class="down">
-          <span class="icon down"></span>
-        </a>
-        <span class="separator"></span>
-        <a class="up">
-          <span class="icon up"></span>
-        </a>
-      </footer>
-    </div>
-    <!-- End of section wrapper -->
-  </div>
-  <!-- End of services section -->
-  <!-- Begin of products section -->
-  <div
-    class="section section-grid fp-auto-height-responsive"
-    data-section="projects"
-  >
-    <div
-      class="section-cover-full fit bg-color"
-      data-bgcolor="rgba(40,40,40,0.5)"
-    ></div>
-    <!-- Begin of section wrapper -->
-    <div class="section-wrapper fullwidth with-margin margin-topbottom">
-      <div class="section-content mb-3">
-        <div class="row">
-          <div class="col-12 col-lg-5 text-left">
-            <!-- title and description -->
-            <div class="title-desc">
-              <h2 class="display-4 display-title mb-4 anim-1">
-                Projects
-              </h2>
-              <p class="anim-2">
-                Here are various products from us. In marketing, a product is anything that
-                can be offered to a market that might satisfy a want or need.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Begin of item list -->
-      <div class="section-content mt-5">
-        <div class="row gx-lg-5 gy-lg-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
-          <!-- item  -->
-          {{#each products}}
-            <div class="col">
-              <div class="item media media-product anim translateUp">
-                <div class="media-header">
-                  <h5 class="category">
-                    {{this.productName}}
-                  </h5>
-                </div>
-                <div class="media-img">
-                  <img
-                    class=""
-                    src="uploads/products/{{this.imageUrl}}"
-                    alt="{{this.productName}}"
-                  />
-                </div>
-                <div class="media-body">
-                  <a href="">
-                    <div class="desc">
-                      <p>
-                        {{{this.productDescription}}}
-                      </p>
-                    </div>
+                <!-- Action button -->
+                <div class="btns-action anim-3">
+                  <a class="btn btn-underline btn-primary" href="#about">
+                    <span class="text">
+                      About Us
+                    </span>
                   </a>
                 </div>
               </div>
             </div>
-          {{/each}}
-        </div>
-      </div>
-      <!-- End of item list -->
-      <!-- Arrows scroll down/up -->
-      <footer class="section-footer scrolldown">
-        <a class="down">
-          <span class="icon down"></span>
-        </a>
-        <span class="separator"></span>
-        <a class="up">
-          <span class="icon up"></span>
-        </a>
-      </footer>
-    </div>
-    <!-- End of section wrapper -->
-  </div>
-  <!-- End of products section -->
-  <!-- Begin of projects section -->
-  <div
-    class="section section-list-feature fp-auto-height-responsive"
-    data-section="odyssey-foundation"
-  >
-    <!-- Begin of section wrapper -->
-    <div class="section-wrapper fullwidth with-margin margin-topbottom">
-      <!-- content -->
-      <div class="section-content anim">
-        <div class="row">
-          <div class="col-12 col-lg-5 text-left">
-            <!-- title and description -->
-            <div class="title-desc">
-              <h2 class="display-4 display-title mb-4 anim-1">
-                Odyssey Foundation
-              </h2>
-              <p class="anim-2">
-                Here are some sample list of our projects. They are just a simple
-                representation of what we can do. If you have something else, or a special request, feel
-                free to contact us.
-              </p>
-            </div>
           </div>
+          <!-- Arrows scroll down/up -->
+          <footer class="section-footer scrolldown">
+            <a class="down">
+              <span class="icon down"></span>
+            </a>
+            <!--<span class="separator"></span>-->
+            <!--<a class="up">
+      <span class="icon up"></span>
+    </a>-->
+          </footer>
         </div>
-        <!-- project list -->
-        <div class="project-list mt-5">
-          <div
-            class="row gx-lg-5 gy-lg-5 row-cols-1 row-cols-md-2 row-cols-lg-3"
-          >
-            <!-- an item -->
-            {{#each projects}}
-              <div class="col">
-                <div class="item media media-project">
-                  <div class="media-img">
-                    <img
-                      class=""
-                      src="uploads/projects/{{this.imageUrl}}"
-                      alt="{{this.projectName}}"
-                    />
+        <!-- End of section wrapper -->
+      </div>
+    {{/unless}}
+    <!-- End of home section -->
+    <!-- Begin of about us section -->
+    {{#unless hideSection.aboutUs}}
+      <div
+        class="section section-description fp-auto-height-responsive"
+        data-section="about"
+      >
+        <!-- Begin of section wrapper -->
+        <div
+          class="section-wrapper fullwidth fullheight with-margin center-lg-v"
+        >
+          <!-- content -->
+          <div class="section-content anim">
+            <div class="row  justify-content-between">
+              <div class="col-12 col-md-5 text-left center-v">
+                <div class="wrapper">
+                  <!-- title and description -->
+                  <div class="title-desc">
+                    <h2 class="display-4 display-title mb-4 anim-1">
+                      About
+                      <br />
+                      <span class="text-lighter">
+                        Odyssey Analytics
+                      </span>
+                    </h2>
+                    <p class="anim-2">
+                      {{#if sectionIntroduction}}
+                        {{{sectionIntroduction.aboutUs}}}
+                      {{/if}}
+                    </p>
                   </div>
-                  <div class="media-body">
-                    <a href="">
-                      <h4>
-                        {{this.projectName}}
-                      </h4>
-                      <p>
-                        {{{this.projectDescription}}}
-                      </p>
+                  <!-- Action button -->
+                  <div class="btns-action anim-3">
+                    <a class="btn btn-underline btn-primary" href="#services">
+                      <span class="text">
+                        Services
+                      </span>
                     </a>
                   </div>
                 </div>
               </div>
-            {{/each}}
+              <div class="col-12 col-md-4">
+                <!-- content -->
+                <div class="section-content center-vh anim">
+                  <!-- illustartion -->
+                  <div class="images text-center">
+                    <div class="img-frame-a">
+                      <img
+                        class="img"
+                        src="images/logos/logoShapeLarge.png"
+                        alt="Image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- Arrows scroll down/up -->
+          <footer class="section-footer scrolldown">
+            <a class="down">
+              <span class="icon down"></span>
+            </a>
+            <span class="separator"></span>
+            <a class="up">
+              <span class="icon up"></span>
+            </a>
+          </footer>
         </div>
+        <!-- End of section wrapper -->
       </div>
-      <!-- Arrows scroll down/up -->
-      <footer class="section-footer scrolldown">
-        <a class="down">
-          <span class="icon down"></span>
-        </a>
-        <span class="separator"></span>
-        <a class="up">
-          <span class="icon up"></span>
-        </a>
-      </footer>
-    </div>
-    <!-- End of section wrapper -->
-  </div>
-  <!-- End of projects section -->
-  <!-- Begin of technology section -->
-  <div
-    class="section section-list-feature fp-auto-height-responsive"
-    data-section="technology"
-  >
-    <!-- Begin of section wrapper -->
-    <div class="section-wrapper fullwidth with-margin margin-topbottom">
-      <!-- content -->
-      <div class="section-content anim">
-        <div class="row">
-          <div class="col-12 col-lg-5 text-left">
-            <!-- title and description -->
-            <div class="title-desc">
-              <h2 class="display-4 display-title mb-4 anim-1">
-                Technologies
-              </h2>
-              <p class="anim-2">
-                We offers the following services to our base customer. They are just a simple
-                representation of what we can do. If you have something else, or a special request, feel free to
-                contact us.
-              </p>
+    {{/unless}}
+    <!-- End of about us section -->
+    <!-- Begin of team section -->
+    {{#unless hideSection.team}}
+      <div
+        class="section section-description fp-auto-height-responsive"
+        data-section="team"
+      >
+        <!-- Begin of section wrapper -->
+        <div
+          class="section-wrapper fullwidth fullheight center-lg-v with-margin margin-topbottom"
+        >
+          <!-- content -->
+          <div class="section-content fullwidth anim">
+            <div class="row">
+              <div class="col-12 col-md-5 text-left center-v">
+                <div class="wrapper">
+                  <!-- title and description -->
+                  <div class="title-desc">
+                    <h1 class="display-4 display-title anim-1  mb-4">
+                      Creative
+                      <br />
+                      <span class="text-lighter">
+                        People
+                    behind
+                      </span>
+                    </h1>
+                    <p class="anim-2">
+                      {{#if sectionIntroduction}}
+                        {{{sectionIntroduction.team}}}
+                      {{/if}}
+                    </p>
+                  </div>
+                  <!-- Action button -->
+                  <div class="btns-action anim-3">
+                    <a class="btn btn-underline btn-primary" href="#services">
+                      <span class="text">
+                        Services
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- aside -->
+          <div
+            class="section-aside aside-tier aside-bottom anim small-relative"
+          >
+            <div class="a-wrapper anim-4">
+              <!-- begin of slider carousel-swiper-alpha -->
+              <div
+                class="slider-wrapper carousel-swiper-alpha carousel-swiper-alpha-demo"
+              >
+                <!-- pagination -->
+                <div class="items-pagination bar text-right"></div>
+                <!-- slider -->
+                <div class="slider-container swiper-container">
+                  <ul class="item-list swiper-wrapper">
+                    <!-- item -->
+                    {{#each members}}
+                      <li class="slide-item swiper-slide">
+                        <div class="item-wrapper">
+                          <div class="illustr">
+                            <a href="">
+                              <img
+                                src="uploads/teams/{{this.imageUrl}}"
+                                alt="{{this.memberName}}"
+                                class="img"
+                              />
+                            </a>
+                          </div>
+                          <div class="legend">
+                            <h3 class="title">
+                              {{this.memberName}}
+                            </h3>
+                            <h4>
+                              {{this.memberPosition}}
+                            </h4>
+                            <div class="icons">
+                              <a class="icon-btn" href="{{this.linkedinUrl}}">
+                                <i class="icon fa fa-linkedin"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    {{/each}}
+                  </ul>
+                </div>
+              </div>
+              <!-- end of slider carousel-swiper-alpha -->
+            </div>
+          </div>
+          <!-- Arrows scroll down/up -->
+          <footer class="section-footer scrolldown">
+            <a class="down">
+              <span class="icon down"></span>
+            </a>
+            <span class="separator"></span>
+            <a class="up">
+              <span class="icon up"></span>
+            </a>
+          </footer>
+        </div>
+        <!-- End of section wrapper -->
+      </div>
+    {{/unless}}
+    <!-- End of team section -->
+    <!-- Begin of mission section -->
+    {{#unless hideSection.mission}}
+      <div
+        class="section section-description fp-auto-height-responsive"
+        data-section="mission"
+      >
+        <div class="section-cover-full">
+          <div class="cover-container">
+            <div class="row gx-0">
+              <div class="col-auto col-lg-8 bg-part"></div>
+              <div
+                class="col-12 col-lg-4 bg-part bg-img"
+                data-image-src="img/items/img-portrait-1.jpg"
+              ></div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col col-12 col-lg-12">
-            <!-- service list -->
-            <div
-              class="service-list row anim-list decor-off row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5"
-            >
-              <!-- an item -->
-              {{#each technologies}}
-                <div class="col item media">
-                  <div class="img">
-                    <h3 class="title-icon opacity-4">
-                      {{add @index 1}}
-                    </h3>
+        <!-- Begin of section wrapper -->
+        <div
+          class="section-wrapper fullwidth fullheight with-margin center-lg-v"
+        >
+          <!-- content -->
+          <div class="section-content anim">
+            <div class="row justify-content-between">
+              <div
+                class="col-12 col-md-6 col-lg-4 text-left center-v pr-md-5 pr-lg-0"
+              >
+                <div class="wrapper">
+                  <!-- title and description -->
+                  <div class="title-desc">
+                    <h2 class="display-4 display-title mb-4 anim-1">
+                      Dedicated
+                      <br />
+                      <span class="text-lighter">
+                        Mission
+                      </span>
+                    </h2>
+                    <p class="anim-2">
+                      {{#if sectionIntroduction}}
+                        {{{sectionIntroduction.mission}}}
+                      {{/if}}
+                    </p>
                   </div>
-                  <div class="media-body">
-                    <a href="#">
-                      <h4>
-                        {{this.technologyName}}
-                      </h4>
-                      <p>
-                        {{{this.technologyDescription}}}
-                      </p>
+                  <!-- Action button -->
+                  <div class="btns-action anim-3">
+                    <a class="btn btn-underline btn-primary" href="#services">
+                      <span class="text">
+                        Services
+                      </span>
                     </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-5"></div>
+            </div>
+          </div>
+          <!-- Arrows scroll down/up -->
+          <footer class="section-footer scrolldown">
+            <a class="down">
+              <span class="icon down"></span>
+            </a>
+            <span class="separator"></span>
+            <a class="up">
+              <span class="icon up"></span>
+            </a>
+          </footer>
+        </div>
+        <!-- End of section wrapper -->
+      </div>
+    {{/unless}}
+    <!-- End of mission section -->
+    <!-- Begin of services section -->
+    {{#unless hideSection.services}}
+      <div
+        class="section section-list-feature fp-auto-height-responsive"
+        data-section="services"
+      >
+        <!-- Begin of section wrapper -->
+        <div class="section-wrapper fullwidth with-margin margin-topbottom">
+          <!-- content -->
+          <div class="section-content anim">
+            <div class="row">
+              <div class="col-12 col-lg-5 text-left">
+                <!-- title and description -->
+                <div class="title-desc">
+                  <h2 class="display-4 display-title mb-4 anim-1">
+                    Services
+                  </h2>
+                  <p class="anim-2">
+                    {{#if sectionIntroduction}}
+                        {{{sectionIntroduction.services}}}
+                      {{/if}}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-12 col-lg-12">
+                <!-- service list -->
+                <div
+                  class="service-list row anim-list decor-off row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5"
+                >
+                  <!-- an item -->
+                  {{#each services}}
+                    <div class="col item media">
+                      <div class="img">
+                        <h3 class="title-icon opacity-4">
+                          {{add @index 1}}
+                        </h3>
+                      </div>
+                      <div class="media-body">
+                        <a href="#">
+                          <h4>
+                            {{this.serviceName}}
+                          </h4>
+                          <p>
+                            {{{this.serviceDescription}}}
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  {{/each}}
+                </div>
+                <!-- end of service list -->
+              </div>
+            </div>
+          </div>
+          <!-- Arrows scroll down/up -->
+          <footer class="section-footer scrolldown">
+            <a class="down">
+              <span class="icon down"></span>
+            </a>
+            <span class="separator"></span>
+            <a class="up">
+              <span class="icon up"></span>
+            </a>
+          </footer>
+        </div>
+        <!-- End of section wrapper -->
+      </div>
+    {{/unless}}
+    <!-- End of services section -->
+    <!-- Begin of projects section -->
+    {{#unless hideSection.projects}}
+      <div
+        class="section section-grid fp-auto-height-responsive"
+        data-section="projects"
+      >
+        <div
+          class="section-cover-full fit bg-color"
+          data-bgcolor="rgba(40,40,40,0.5)"
+        ></div>
+        <!-- Begin of section wrapper -->
+        <div class="section-wrapper fullwidth with-margin margin-topbottom">
+          <div class="section-content mb-3">
+            <div class="row">
+              <div class="col-12 col-lg-5 text-left">
+                <!-- title and description -->
+                <div class="title-desc">
+                  <h2 class="display-4 display-title mb-4 anim-1">
+                    Projects
+                  </h2>
+                  <p class="anim-2">
+                    {{#if sectionIntroduction}}
+                      {{{sectionIntroduction.projects}}}
+                    {{/if}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Begin of item list -->
+          <div class="section-content mt-5">
+            <div
+              class="row gx-lg-5 gy-lg-5 row-cols-1 row-cols-md-2 row-cols-lg-3"
+            >
+              <!-- item  -->
+              {{#each projects}}
+                <div class="col">
+                  <div class="item media media-product anim translateUp">
+                    <div class="media-header">
+                      <h5 class="category">
+                        {{this.projectName}}
+                      </h5>
+                    </div>
+                    <div class="media-img">
+                      <img
+                        class=""
+                        src="uploads/projects/{{this.imageUrl}}"
+                        alt="{{this.projectName}}"
+                      />
+                    </div>
+                    <div class="media-body">
+                      <a href="#">
+                        <div class="desc">
+                          <p>
+                            {{{this.projectDescription}}}
+                          </p>
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
               {{/each}}
             </div>
-            <!-- end of service list -->
           </div>
+          <!-- End of item list -->
+          <!-- Arrows scroll down/up -->
+          <footer class="section-footer scrolldown">
+            <a class="down">
+              <span class="icon down"></span>
+            </a>
+            <span class="separator"></span>
+            <a class="up">
+              <span class="icon up"></span>
+            </a>
+          </footer>
         </div>
+        <!-- End of section wrapper -->
       </div>
-      <!-- Arrows scroll down/up -->
-      <footer class="section-footer scrolldown">
-        <a class="down">
-          <span class="icon down"></span>
-        </a>
-        <span class="separator"></span>
-        <a class="up">
-          <span class="icon up"></span>
-        </a>
-      </footer>
-    </div>
-    <!-- End of section wrapper -->
-  </div>
-  <!-- End of technology section -->
-  <!-- Begin of career section -->
-  <div
-    class="section section-register fp-auto-height-responsive"
-    data-section="careers"
-  >
-    <!-- Begin of section wrapper -->
-    <div
-      class="section-wrapper fullwidth fullheight center-lg-v with-margin margin-topbottom"
-    >
-      <!-- content -->
-      <div class="section-content fullwidth anim">
-        <div class="row">
-          <div class="col-12 col-md-12 col-lg-5">
-            <!-- Registration form container-->
-            <form
-              class="send_email_form form-container form-container-transparent form-container-white"
-              method="post"
-              action="ajaxserver/serverfile.php"
-            >
-              <div class="form-desc">
-                <h2 class="display-4 display-title  anim-2">
-                  Careers
-                </h2>
-                <p class="invite  anim-3">
-                  We are Looking for talented people,
-                </p>
-              </div>
-              <div class="form-input  anim-4">
-                <div class="form-group mb-0">
-                  <div class="btns-action anim-3">
-                    <a
-                      id="current-careers"
-                      name="current-careers"
-                      class="btn btn-underline btn-primary form-success-gone"
-                      href="#"
-                    >
-                      <span class="text">
-                        Current Openings
-                      </span>
-                      <span class="icon">
-                        <i class="ion ion-checkmark"></i>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!-- end of content -->
-    </div>
-    <!-- End of section wrapper -->
-    <!-- Arrows scroll down/up -->
-    <footer class="section-footer scrolldown">
-      <a class="down">
-        <span class="icon down"></span>
-      </a>
-      <span class="separator"></span>
-      <a class="up">
-        <span class="icon up"></span>
-      </a>
-    </footer>
-  </div>
-  <!-- End of career section -->
-  <!-- Begin of contact section -->
-  <div
-    class="section section-contact fp-auto-height-responsive no-slide-arrows"
-    data-section="contact"
-  >
-    <div
-      class="section-cover-full fit bg-color"
-      data-bgcolor="rgba(40,40,40,0.5)"
-    ></div>
-    <!-- begin of information slide -->
-    <div class="slide" id="information" data-anchor="information">
-      <!-- Begin of slide section wrapper -->
+    {{/unless}}
+    <!-- End of projects section -->
+    <!-- Begin of odysseyFoundationProjects section -->
+    {{#unless hideSection.odysseyFoundation}}
       <div
-        class="section-wrapper fullwidth fullheight center-lg-v with-margin margin-topbottom"
+        class="section section-list-feature fp-auto-height-responsive"
+        data-section="odyssey-foundation"
       >
-        <!-- main content -->
-        <div class="row">
-          <div class="col-12 col-md-12 col-lg-12">
-            <!-- content -->
-            <div class="section-content fullwidth anim text-left">
-              <!-- title and description -->
-              <div class="title-desc">
-                <div class="anim-2">
-                  <h2 class="display-4 display-title">
-                    Contact Us
+        <!-- Begin of section wrapper -->
+        <div class="section-wrapper fullwidth with-margin margin-topbottom">
+          <!-- content -->
+          <div class="section-content anim">
+            <div class="row">
+              <div class="col-12 col-lg-5 text-left">
+                <!-- title and description -->
+                <div class="title-desc">
+                  <h2 class="display-4 display-title mb-4 anim-1">
+                    Odyssey Foundation
                   </h2>
-                  <p>
-                    For questions about our company and projects contact us at,
+                  <p class="anim-2">
+                    {{#if sectionIntroduction}}
+                        {{{sectionIntroduction.odysseyFoundation}}}
+                      {{/if}}
                   </p>
                 </div>
-                <div class="address-container anim-3">
-                  <div class="row">
-                    <div class="col-12 col-md-6 col-lg-6">
-                      <h4>
-                        Contact
-                      </h4>
-                      <p>
-                        Call: +92 345 6085785
-                      </p>
-                      <p>
-                        Email: info@odysseyanalytics.net
-                      </p>
+              </div>
+            </div>
+            <!-- project list -->
+            <div class="project-list mt-5">
+              <div
+                class="row gx-lg-5 gy-lg-5 row-cols-1 row-cols-md-2 row-cols-lg-3"
+              >
+                <!-- an item -->
+                {{#each odysseyFoundationProjects}}
+                  <div class="col">
+                    <div class="item media media-project">
+                      <div class="media-img">
+                        <img
+                          class=""
+                          src="uploads/odysseyFoundationProjects/
+                            {{this.imageUrl}}"
+                          alt="{{this.projectName}}"
+                        />
+                      </div>
+                      <div class="media-body">
+                        <a href="#">
+                          <h4>
+                            {{this.projectName}}
+                          </h4>
+                          <p>
+                            {{{this.projectDescription}}}
+                          </p>
+                        </a>
+                      </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6">
-                      <h4>
-                        Address
-                      </h4>
-                      <div class="row">
-                        <div class="col-12 col-md-6 col-lg-6">
+                  </div>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+          <!-- Arrows scroll down/up -->
+          <footer class="section-footer scrolldown">
+            <a class="down">
+              <span class="icon down"></span>
+            </a>
+            <span class="separator"></span>
+            <a class="up">
+              <span class="icon up"></span>
+            </a>
+          </footer>
+        </div>
+        <!-- End of section wrapper -->
+      </div>
+    {{/unless}}
+    <!-- End of odysseyFoundationProjects section -->
+    <!-- Begin of technology section -->
+    {{#unless hideSection.technologies}}
+      <div
+        class="section section-list-feature fp-auto-height-responsive"
+        data-section="technology"
+      >
+        <!-- Begin of section wrapper -->
+        <div class="section-wrapper fullwidth with-margin margin-topbottom">
+          <!-- content -->
+          <div class="section-content anim">
+            <div class="row">
+              <div class="col-12 col-lg-5 text-left">
+                <!-- title and description -->
+                <div class="title-desc">
+                  <h2 class="display-4 display-title mb-4 anim-1">
+                    Technologies
+                  </h2>
+                  <p class="anim-2">
+                    {{#if sectionIntroduction}}
+                        {{{sectionIntroduction.technologies}}}
+                      {{/if}}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-12 col-lg-12">
+                <!-- service list -->
+                <div
+                  class="service-list row anim-list decor-off row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5"
+                >
+                  <!-- an item -->
+                  {{#each technologies}}
+                    <div class="col item media">
+                      <div class="img">
+                        <h3 class="title-icon opacity-4">
+                          {{add @index 1}}
+                        </h3>
+                      </div>
+                      <div class="media-body">
+                        <a href="#">
+                          <h4>
+                            {{this.technologyName}}
+                          </h4>
                           <p>
-                            <strong>
-                              Houston address
-                            </strong>
-                            <br />
-                            OdysseyAnalytics LLC
-                        5757 Woodway Drive Suite 300
-                            <br />
-                            Houston Texas – 77057
+                            {{{this.technologyDescription}}}
                           </p>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-6">
-                          <p>
-                            <strong>
-                              Pakistan address
-                            </strong>
-                            <br />
-                            OdysseyAnalytics 526, 
-                        5th-floor Siddique Trade Centre
-                            <br />
-                            Main Boulevard Gulberg, Lahore
-                          </p>
-                        </div>
+                        </a>
+                      </div>
+                    </div>
+                  {{/each}}
+                </div>
+                <!-- end of service list -->
+              </div>
+            </div>
+          </div>
+          <!-- Arrows scroll down/up -->
+          <footer class="section-footer scrolldown">
+            <a class="down">
+              <span class="icon down"></span>
+            </a>
+            <span class="separator"></span>
+            <a class="up">
+              <span class="icon up"></span>
+            </a>
+          </footer>
+        </div>
+        <!-- End of section wrapper -->
+      </div>
+    {{/unless}}
+    <!-- End of technology section -->
+    <!-- Begin of career section -->
+    {{#unless hideSection.careers}}
+      <div
+        class="section section-description fp-auto-height-responsive"
+        data-section="careers"
+      >
+        <div class="section-cover-full">
+          <div class="cover-container">
+            <div class="row gx-0">
+              <div class="col-auto col-lg-8 bg-part"></div>
+              <div
+                class="col-12 col-lg-4 bg-part bg-img"
+                data-image-src="img/items/img-portrait-4.jpg"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- Begin of section wrapper -->
+        <div
+          class="section-wrapper fullwidth fullheight with-margin center-lg-v"
+        >
+          <!-- content -->
+          <div class="section-content anim">
+            <div class="row justify-content-between">
+              <div class="col-12 text-left center-v pr-md-5 pr-lg-0">
+                <div class="wrapper">
+                  <div class="form-desc">
+                    <h2 class="display-4 display-title  anim-2">
+                      Careers
+                    </h2>
+                    <p class="invite  anim-3">
+                      {{#if sectionIntroduction}}
+                        {{{sectionIntroduction.careers}}}
+                      {{/if}}
+                    </p>
+                  </div>
+                  <div class="form-input  anim-4">
+                    <div class="form-group mb-0">
+                      <div class="btns-action anim-3">
+                        
+                        <a
+                          id="current-careers"
+                          name="current-careers"
+                          class="btn btn-underline btn-primary form-success-gone"
+                          {{#if careerPortalLink}}
+                          href="{{careerPortalLink.link}}"
+                          {{else}}
+                          href="#"
+                          {{/if}}
+                        >
+                          <span class="text">
+                            Current Openings
+                          </span>
+                          <span class="icon">
+                            <i class="ion ion-checkmark"></i>
+                          </span>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="col-12 col-md-6 col-lg-5"></div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
-            <!-- aside footer -->
-            <div class="section-aside aside-bottom small-relative footer-pos">
-              <div class="text-left text-md-right">
-                <p>
-                  Stay updated. Follow us on social media
-                </p>
-              </div>
-              <div class="icons icons-margin">
-                <a class="icon-btn" href="#">
-                  <i class="icon fa fa-instagram"></i>
-                </a>
-                <a class="icon-btn" href="#">
-                  <i class="icon fa fa-youtube"></i>
-                </a>
-                <a class="icon-btn" href="#">
-                  <i class="icon fa fa-facebook"></i>
-                </a>
-                <a class="icon-btn" href="#">
-                  <i class="icon fa fa-pinterest"></i>
-                </a>
-                <a class="icon-btn" href="#">
-                  <i class="icon fa fa-twitter"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+          <!-- Arrows scroll down/up -->
+          <footer class="section-footer scrolldown">
+            <a class="down">
+              <span class="icon down"></span>
+            </a>
+            <span class="separator"></span>
+            <a class="up">
+              <span class="icon up"></span>
+            </a>
+          </footer>
         </div>
+        <!-- End of section wrapper -->
       </div>
-      <!-- End of slide section wrapper -->
-    </div>
-    <!-- Arrows scroll down/up -->
-    <footer class="section-footer scrolldown">
-      <a class="up ml-0">
-        <span class="icon up"></span>
-      </a>
-    </footer>
-  </div>
-  <!-- End of contact section -->
+    {{/unless}}
+    <!-- End of career section -->
+    <!-- Begin of contact section -->
+    {{#unless hideSection.contact}}
+      {{#if contact}}
+        <div
+          class="section section-contact fp-auto-height-responsive no-slide-arrows"
+          data-section="contact"
+        >
+          <div
+            class="section-cover-full fit bg-color"
+            data-bgcolor="rgba(40,40,40,0.5)"
+          ></div>
+          <!-- begin of information slide -->
+          <div class="slide" id="information" data-anchor="information">
+            <!-- Begin of slide section wrapper -->
+            <div
+              class="section-wrapper fullwidth fullheight center-lg-v with-margin margin-topbottom"
+            >
+              <!-- main content -->
+              <div class="row">
+                <div class="col-12 col-md-12 col-lg-12">
+                  <!-- content -->
+                  <div class="section-content fullwidth anim text-left">
+                    <!-- title and description -->
+                    <div class="title-desc">
+                      <div class="anim-2">
+                        <h2 class="display-4 display-title">
+                          Contact Us
+                        </h2>
+                        <p>
+                          {{#if sectionIntroduction}}
+                            {{{sectionIntroduction.contact}}}
+                          {{/if}}
+                        </p>
+                      </div>
+                      <div class="address-container anim-3">
+                        <div class="row">
+                          <div class="col-12 col-md-6 col-lg-6">
+                            <h4>
+                              Contact
+                            </h4>
+                            <p>
+                              Call:
+                              {{contact.phoneNumber}}
+                            </p>
+                            <p>
+                              Email:
+                              {{contact.email}}
+                            </p>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-6">
+                            <h4>
+                              Address
+                            </h4>
+                            <div class="row">
+                              <div class="col-12 col-md-6 col-lg-6">
+                                <p>
+                                  <strong>
+                                    {{contact.address1Location}}
+                                  </strong>
+                                  <br />
+                                  {{{contact.address1}}}
+                                </p>
+                              </div>
+                              <div class="col-12 col-md-6 col-lg-6">
+                                <p>
+                                  <strong>
+                                    {{contact.address2Location}}
+                                  </strong>
+                                  <br />
+                                  {{{contact.address2}}}
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {{!-- <div class="col-12 col-md-6">
+                  <!-- aside footer -->
+                  <div
+                    class="section-aside aside-bottom small-relative footer-pos"
+                  >
+                    <div class="text-left text-md-right">
+                      <p>
+                        Stay updated. Follow us on social media
+                      </p>
+                    </div>
+                    <div class="icons icons-margin">
+                      <a class="icon-btn" href="#">
+                        <i class="icon fa fa-instagram"></i>
+                      </a>
+                      <a class="icon-btn" href="#">
+                        <i class="icon fa fa-youtube"></i>
+                      </a>
+                      <a class="icon-btn" href="#">
+                        <i class="icon fa fa-facebook"></i>
+                      </a>
+                      <a class="icon-btn" href="#">
+                        <i class="icon fa fa-pinterest"></i>
+                      </a>
+                      <a class="icon-btn" href="#">
+                        <i class="icon fa fa-twitter"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div> --}}
+              </div>
+            </div>
+            <!-- End of slide section wrapper -->
+          </div>
+          <!-- Arrows scroll down/up -->
+          <footer class="section-footer scrolldown">
+            <a class="up ml-0">
+              <span class="icon up"></span>
+            </a>
+          </footer>
+        </div>
+      {{/if}}
+    {{/unless}}
+    <!-- End of contact section -->
+  {{/if}}
 </main>
 <!-- END OF page main content -->

@@ -1,10 +1,10 @@
 module.exports = (sequelize, DataTypes) => {
-  const Product = sequelize.define("product", {
-    productName: {
+  const OdysseyFoundationProject = sequelize.define("odyssey_foundation_project", {
+    projectName: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    productDescription: {
+    projectDescription: {
       type: DataTypes.TEXT,
       allowNull: false,
     },
@@ -20,5 +20,5 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
     },
   });
-  return Product;
+  return OdysseyFoundationProject;
 };

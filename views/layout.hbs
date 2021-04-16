@@ -50,13 +50,12 @@
   </div>
   {{> header }}
   <!-- BEGIN OF page cover -->
-  <div class="page-cover" id="parallax-cover">
+  <div class="hh-cover page-cover">
     <!-- Cover Background -->
-    <div data-depth="0.2" class="cover-bg bg-img" data-image-src="images/backgrounds/odysseyBackground.jpg"></div>
+    <div class="cover-bg bg-img " data-image-src="img/bg-default2.jpg"></div>
 
-    <!-- Transluscent mask as filter -->
-    <div class="cover-bg-mask bg-color" data-bgcolor="rgba(2, 3, 10, 0.7)"></div>
-
+    <!-- Particles as background - uncomment below to use particles/snow -->
+    <div id="particles-js" class="cover-bg pos-abs full-size bg-color" data-bgcolor="rgba(2, 3, 10, 0.7)"></div>
   </div>
   <!--END OF page cover -->
 
@@ -84,6 +83,7 @@
   <!-- Javascript main files -->
   <script src="/javascripts/main.js"></script>
 
+  <script src="/javascripts/particlejs/particles-init.js"></script>
 </body>
 
 </html>

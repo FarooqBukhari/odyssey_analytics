@@ -19,18 +19,10 @@
   </button>
   <!-- End of menu icon toggler -->
   <!-- Begin of logo/brand -->
-  <a class="navbar-brand" href="./#">
+  <a class="navbar-brand" href="#">
     <span class="logo">
-      <img class="light-logo" src="images/logos/logoWB.svg" alt="Logo" />
+      <img class="light-logo" src="images/logos/logoShape.svg" alt="Logo" />
     </span>
-    {{!-- <span class="text">
-      <span class="line">
-        Odyssey Analytics
-      </span>
-      <span class="line sub">
-        A New Era in Technology Transformation
-      </span>
-    </span> --}}
   </a>
   <!-- End of logo/brand -->
   <!-- begin of menu wrapper -->
@@ -38,59 +30,83 @@
     <!-- Begin of hamburger mainmenu menu -->
     <nav class="navbar-mainmenu text-center">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#home">
-            Home
-            <span class="sr-only">
-              (current)
-            </span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">
-            About Us
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#team">
-            Team
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#mission">
-            Mission
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#services">
-            Services
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">
-            Projects
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#odyssey-foundation">
-            Odyssey Foundation
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#technology">
-            Technologies
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#careers">
-            Careers
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">
-            Contact
-          </a>
-        </li>
+        {{#if hideSection}}
+          {{#unless hideSection.home}}
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">
+                Home
+                <span class="sr-only">
+                  (current)
+                </span>
+              </a>
+            </li>
+          {{/unless}}
+          {{#unless hideSection.aboutUs}}
+            <li class="nav-item">
+              <a class="nav-link" href="#about">
+                About Us
+              </a>
+            </li>
+          {{/unless}}
+          {{#unless hideSection.team}}
+            <li class="nav-item">
+              <a class="nav-link" href="#team">
+                Team
+              </a>
+            </li>
+          {{/unless}}
+          {{#unless hideSection.mission}}
+            <li class="nav-item">
+              <a class="nav-link" href="#mission">
+                Mission
+              </a>
+            </li>
+          {{/unless}}
+          {{#unless hideSection.services}}
+            <li class="nav-item">
+              <a class="nav-link" href="#services">
+                Services
+              </a>
+            </li>
+          {{/unless}}
+          {{#unless hideSection.projects}}
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">
+                Projects
+              </a>
+            </li>
+          {{/unless}}
+          {{#unless hideSection.odysseyFoundation}}
+            <li class="nav-item">
+              <a class="nav-link" href="#odyssey-foundation">
+                Odyssey Foundation
+              </a>
+            </li>
+          {{/unless}}
+          {{#unless hideSection.technologies}}
+            <li class="nav-item">
+              <a class="nav-link" href="#technology">
+                Technologies
+              </a>
+            </li>
+          {{/unless}}
+          {{#unless hideSection.careers}}
+            <li class="nav-item">
+              <a class="nav-link" href="#careers">
+                Careers
+              </a>
+            </li>
+          {{/unless}}
+          {{#unless hideSection.contact}}
+            {{#if contact}}
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                  Contact
+                </a>
+              </li>
+            {{/if}}
+          {{/unless}}
+        {{/if}}
       </ul>
     </nav>
     <!-- End of hamburger mainmenu menu -->
@@ -106,10 +122,10 @@
           </a>
         </li>
         <li class="nav-item" data-menuanchor="projects-featured">
-          <a href="#projects-featured">
+          <a href="#about">
             <i class="icon ion-android-image"></i>
             <span class="txt">
-              Projects
+              About
             </span>
           </a>
         </li>

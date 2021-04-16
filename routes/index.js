@@ -11,8 +11,8 @@ const getProjects = function(){
   return db.projects.findAll({ order: [['displayOrder', 'ASC']] });
 };
 
-const getProducts = function(){
-  return db.products.findAll({ order: [['displayOrder', 'ASC']] });
+const getOdysseyFoundationProjects = function(){
+  return db.odysseyFoundationProjects.findAll({ order: [['displayOrder', 'ASC']] });
 };
 
 const getTechnologies = function(){
@@ -23,15 +23,35 @@ const getServices = function(){
   return db.services.findAll({ order: [['displayOrder', 'ASC']] });
 };
 
+const getCareerPortalLink = function(){
+  return db.careerPortalLink.findOne({ order: [['createdAt', 'ASC']] });
+};
+
+const getContact = function(){
+  return db.contact.findOne({ order: [['createdAt', 'ASC']] });
+};
+
+const getHideSection = function(){
+  return db.hideSection.findOne({ order: [['createdAt', 'ASC']] });
+};
+
+const getSectionIntroduction = function(){
+  return db.sectionIntroduction.findOne({ order: [['createdAt', 'ASC']] });
+};
+
 /* GET home page. */
 router.get('/', function (req, res, next) {
   var teamsPromise = getTeamMembers();
   var projectsPromise = getProjects();
-  var productsPromise = getProducts();
+  var odysseyFoundationProjectsPromise = getOdysseyFoundationProjects();
   var technologiesPromise = getTechnologies();
   var servicesPromise = getServices();
-  Promise.all([teamsPromise, projectsPromise, productsPromise, technologiesPromise, servicesPromise]).then((results) => {
-    return res.render('index', {members: results[0], projects: results[1], products: results[2], technologies: results[3], services: results[4]});
+  var careerPortalLinkPromise = getCareerPortalLink();
+  var contactPromise = getContact();
+  var hideSectionPromise = getHideSection();
+  var sectionIntroductionPromise = getSectionIntroduction();
+  Promise.all([teamsPromise, projectsPromise, odysseyFoundationProjectsPromise, technologiesPromise, servicesPromise, careerPortalLinkPromise, contactPromise, hideSectionPromise, sectionIntroductionPromise]).then((results) => {
+    return res.render('index', {members: results[0], odysseyFoundationProjects: results[1], projects: results[2], technologies: results[3], services: results[4], careerPortalLink: results[5], contact: results[6], hideSection: results[7], sectionIntroduction: results[8]});
   }).catch((err) => {
     return next(err);
   })

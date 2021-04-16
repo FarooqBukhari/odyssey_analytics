@@ -14,7 +14,7 @@ const imageValidation = {
 }
 const teamProvider = new UploadProvider("uploads/teams", "uploads/teams");
 const projectProvider = new UploadProvider("upload/projects", "uploads/projects");
-const productProvider = new UploadProvider("upload/products", "uploads/products");
+const odysseyFoundationProjectProvider = new UploadProvider("upload/odysseyFoundationProjects", "uploads/odysseyFoundationProjects");
 const technologyProvider = new UploadProvider("upload/technologies", "uploads/technologies");
 const serviceProvider = new UploadProvider("upload/service", "uploads/service");
 
@@ -28,103 +28,137 @@ const adminBro = new AdminBro({
     },
     resources: [
         {
-        resource: db.teams,
-        options: {
-            listProperties: ['memberName', 'memberPosition', 'linkedinUrl', 'displayOrder'],
-            properties: {
-                imageUrl: { isVisible: false },
-                imageMimeType: { isVisible: false}
+            resource: db.teams,
+            options: {
+                listProperties: ['memberName', 'memberPosition', 'linkedinUrl', 'displayOrder'],
+                properties: {
+                    imageUrl: { isVisible: false },
+                    imageMimeType: { isVisible: false}
+                },
             },
-        },
-        features: [uploadFeature({
-            provider: teamProvider,
-            properties: {
-                key: 'imageUrl', // to this db field feature will safe image url
-                mimeType: 'imageMimeType' // this property is important because allows to have previews
+            features: [uploadFeature({
+                provider: teamProvider,
+                properties: {
+                    key: 'imageUrl', // to this db field feature will safe image url
+                    mimeType: 'imageMimeType' // this property is important because allows to have previews
+                },
+                validation: imageValidation,
             },
-            validation: imageValidation,
+            )]
         },
-        )]
-    },
-    {
-        resource: db.projects,
-        options: {
-            listProperties: ['projectName', 'projectDescription', 'displayOrder'],
-            properties: {
-                projectDescription: { type: 'richtext' },
-                imageUrl: { isVisible: false },
-                imageMimeType: { isVisible: false}
+        {
+            resource: db.projects,
+            options: {
+                listProperties: ['projectName', 'projectDescription', 'displayOrder'],
+                properties: {
+                    projectDescription: { type: 'richtext' },
+                    imageUrl: { isVisible: false },
+                    imageMimeType: { isVisible: false}
+                },
             },
-        },
-        features: [uploadFeature({
-            provider: projectProvider,
-            properties: {
-                key: 'imageUrl', // to this db field feature will safe image  url
-                mimeType: 'imageMimeType' // this property is important because allows to have previews
+            features: [uploadFeature({
+                provider: projectProvider,
+                properties: {
+                    key: 'imageUrl', // to this db field feature will safe image  url
+                    mimeType: 'imageMimeType' // this property is important because allows to have previews
+                },
+                validation: imageValidation,
             },
-            validation: imageValidation,
+            )]
         },
-        )]
-    },{
-        resource: db.products,
-        options: {
-            listProperties: ['productName', 'productDescription', 'displayOrder'],
-            properties: {
-                productDescription: { type: 'richtext' },
-                imageUrl: { isVisible: false },
-                imageMimeType: { isVisible: false}
+        {
+            resource: db.odysseyFoundationProjects,
+            options: {
+                listProperties: ['projectName', 'projectDescription', 'displayOrder'],
+                properties: {
+                    projectDescription: { type: 'richtext' },
+                    imageUrl: { isVisible: false },
+                    imageMimeType: { isVisible: false}
+                },
             },
-        },
-        features: [uploadFeature({
-            provider: productProvider,
-            properties: {
-                key: 'imageUrl', // to this db field feature will safe image  url
-                mimeType: 'imageMimeType' // this property is important because allows to have previews
+            features: [uploadFeature({
+                provider: odysseyFoundationProjectProvider,
+                properties: {
+                    key: 'imageUrl', // to this db field feature will safe image  url
+                    mimeType: 'imageMimeType' // this property is important because allows to have previews
+                },
+                validation: imageValidation,
             },
-            validation: imageValidation,
+            )]
         },
-        )]
-    },
-    {
-        resource: db.technologies,
-        options: {
-            listProperties: ['technologyName', 'technologyDescription', 'displayOrder'],
-            properties: {
-                technologyDescription: { type: 'richtext' },
-                imageUrl: { isVisible: false },
-                imageMimeType: { isVisible: false}
+        {
+            resource: db.technologies,
+            options: {
+                listProperties: ['technologyName', 'technologyDescription', 'displayOrder'],
+                properties: {
+                    technologyDescription: { type: 'richtext' },
+                    imageUrl: { isVisible: false },
+                    imageMimeType: { isVisible: false}
+                },
             },
-        },
-        features: [uploadFeature({
-            provider: technologyProvider,
-            properties: {
-                key: 'imageUrl', // to this db field feature will safe image  url
-                mimeType: 'imageMimeType' // this property is important because allows to have previews
+            features: [uploadFeature({
+                provider: technologyProvider,
+                properties: {
+                    key: 'imageUrl', // to this db field feature will safe image  url
+                    mimeType: 'imageMimeType' // this property is important because allows to have previews
+                },
+                validation: imageValidation,
             },
-            validation: imageValidation,
+            )]
         },
-        )]
-    },
-    {
-        resource: db.services,
-        options: {
-            listProperties: ['serviceName', 'serviceDescription', 'displayOrder'],
-            properties: {
-                serviceDescription: { type: 'richtext' },
-                imageUrl: { isVisible: false },
-                imageMimeType: { isVisible: false}
+        {
+            resource: db.services,
+            options: {
+                listProperties: ['serviceName', 'serviceDescription', 'displayOrder'],
+                properties: {
+                    serviceDescription: { type: 'richtext' },
+                    imageUrl: { isVisible: false },
+                    imageMimeType: { isVisible: false}
+                },
             },
-        },
-        features: [uploadFeature({
-            provider: serviceProvider,
-            properties: {
-                key: 'imageUrl', // to this db field feature will safe image  url
-                mimeType: 'imageMimeType' // this property is important because allows to have previews
+            features: [uploadFeature({
+                provider: serviceProvider,
+                properties: {
+                    key: 'imageUrl', // to this db field feature will safe image  url
+                    mimeType: 'imageMimeType' // this property is important because allows to have previews
+                },
+                validation: imageValidation,
             },
-            validation: imageValidation,
+            )]
         },
-        )]
-    }]
+        {
+            resource: db.careerPortalLink
+        },
+        {
+            resource: db.contact,
+            options: {
+                properties: {
+                    address1: { type: 'richtext' },
+                    address2: { type: 'richtext' },
+                },
+            }
+        },
+        {
+            resource: db.hideSection
+        },
+        {
+            resource: db.sectionIntroduction,
+            options: {
+                properties: {
+                    home: { type: 'richtext' },
+                    aboutUs: { type: 'richtext' },
+                    team: { type: 'richtext' },
+                    mission: { type: 'richtext' },
+                    services: { type: 'richtext' },
+                    projects: { type: 'richtext' },
+                    odysseyFoundation: { type: 'richtext' },
+                    technologies: { type: 'richtext' },
+                    careers: { type: 'richtext' },
+                    contact: { type: 'richtext' },
+                },
+            }
+        },
+    ]
 });
 
 const ADMIN = {
