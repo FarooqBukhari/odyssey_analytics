@@ -51,7 +51,7 @@ router.get('/', function (req, res, next) {
   var hideSectionPromise = getHideSection();
   var sectionIntroductionPromise = getSectionIntroduction();
   Promise.all([teamsPromise, projectsPromise, odysseyFoundationProjectsPromise, technologiesPromise, servicesPromise, careerPortalLinkPromise, contactPromise, hideSectionPromise, sectionIntroductionPromise]).then((results) => {
-    return res.render('index', {members: results[0], odysseyFoundationProjects: results[1], projects: results[2], technologies: results[3], services: results[4], careerPortalLink: results[5], contact: results[6], hideSection: results[7], sectionIntroduction: results[8], headerChanges: false});
+    return res.render('index', {members: results[0], projects: results[1], odysseyFoundationProjects: results[2], technologies: results[3], services: results[4], careerPortalLink: results[5], contact: results[6], hideSection: results[7], sectionIntroduction: results[8], headerChanges: false});
   }).catch((err) => {
     return next(err);
   })
